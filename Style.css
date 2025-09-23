@@ -248,6 +248,9 @@ header{
     display: block;
     margin-bottom: 20px;
 }
+a.navbar-brand {
+    padding: 0;
+}
 .slide .content .inner .title {
     color: var(--color-heading-wv);
 }
@@ -1102,4 +1105,5 @@ line-height: 30px;
 .ptb--40 {
     padding: 0 00 0px 0 !important;
 }
+
 }
