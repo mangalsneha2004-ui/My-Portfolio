@@ -821,7 +821,7 @@ font-weight: 500;
     position: relative;
     }
     .barra-nivel {
-      height: 100%;
+      height: 15px;
       background: var(--color-subtitle);
       width: 0;
       transition: width 1.5s ease;
@@ -1107,3 +1107,4 @@ line-height: 30px;
 }
 
 }
+
