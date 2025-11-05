@@ -256,7 +256,7 @@ a.navbar-brand {
 }
 .slide .content .inner .title {
     font-weight: 700;
-    font-size: 60px;
+    font-size: 52px;
     line-height: 62px;
     margin-bottom: 22px;
     font-family: var(--font-secondary);
@@ -354,7 +354,6 @@ body.white-version .slide   .social-share li img {
     transition: var(--transition);
     stroke-width: 2;
     position: relative;
-    z-index: 2;
     width: 20px;
     font-size: 20px;
     display: flex;
@@ -502,6 +501,7 @@ body.white-version .Project-card .inner .content span {
 }
 body.white-version .Project-card .inner .content .title a {
     color: var(--color-heading-wv);
+    text-transform: capitalize;
 }
 .Project-card .inner .content .title a, .Project-card .inner .content .title span {
     transition: var(--transition);
@@ -1107,4 +1107,7 @@ line-height: 30px;
 }
 
 }
-
+a[aria-disabled="true"] {
+  pointer-events: none;
+  cursor: pointer;
+}
