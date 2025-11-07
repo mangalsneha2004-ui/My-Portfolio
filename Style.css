@@ -251,6 +251,9 @@ header{
 a.navbar-brand {
     padding: 0;
 }
+.navbar-brand img, #offcanvasExampleLabel img {
+    width: 50px;
+}
 .slide .content .inner .title {
     color: var(--color-heading-wv);
 }
@@ -1110,4 +1113,5 @@ line-height: 30px;
 a[aria-disabled="true"] {
   pointer-events: none;
   cursor: pointer;
+
 }
