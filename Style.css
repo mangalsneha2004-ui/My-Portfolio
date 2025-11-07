@@ -252,7 +252,7 @@ a.navbar-brand {
     padding: 0;
 }
 .navbar-brand img, #offcanvasExampleLabel img {
-    width: 50px !important;
+    width: 50% !important;
 }
 .slide .content .inner .title {
     color: var(--color-heading-wv);
@@ -1115,4 +1115,5 @@ a[aria-disabled="true"] {
   cursor: pointer;
 
 }
+
 
