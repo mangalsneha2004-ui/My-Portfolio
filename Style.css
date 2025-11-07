@@ -252,7 +252,7 @@ a.navbar-brand {
     padding: 0;
 }
 .navbar-brand img, #offcanvasExampleLabel img {
-    width: 50px;
+    width: 50px !important;
 }
 .slide .content .inner .title {
     color: var(--color-heading-wv);
@@ -441,7 +441,7 @@ body.white-version .section-title span.subtitle {
     border-radius: 10px;
 }
 
-.elementor a {
+a {
     box-shadow: none;
     text-decoration: none;
 }
@@ -1115,3 +1115,4 @@ a[aria-disabled="true"] {
   cursor: pointer;
 
 }
+
