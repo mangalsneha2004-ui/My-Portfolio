@@ -1,19 +1,22 @@
-// dark-light theme toggle
-    const toggleBtn = document.getElementById("themeBtn");
-    const themeIcon = document.getElementById("themeIcon");
+// 🌙 DARK–LIGHT THEME TOGGLE (DESKTOP + MOBILE)
 
-    toggleBtn.addEventListener("click", () => {
+const themeButtons = document.querySelectorAll(".themeBtn");
+const themeIcons = document.querySelectorAll(".themeIcon");
 
-        document.body.classList.toggle("dark");
+function toggleTheme() {
+    document.body.classList.toggle("dark");
 
-        if (document.body.classList.contains("dark")) {
-            themeIcon.classList.remove("fa-moon");
-            themeIcon.classList.add("fa-sun");
-        } else {
-            themeIcon.classList.remove("fa-sun");
-            themeIcon.classList.add("fa-moon");
-        }
+    const isDark = document.body.classList.contains("dark");
+
+    themeIcons.forEach(icon => {
+        icon.classList.toggle("fa-moon", !isDark);
+        icon.classList.toggle("fa-sun", isDark);
     });
+}
+
+themeButtons.forEach(btn => {
+    btn.addEventListener("click", toggleTheme);
+});
 
 // about us progressbar js 
     $(document).ready(function () {

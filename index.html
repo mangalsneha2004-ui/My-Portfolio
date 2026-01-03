@@ -47,10 +47,9 @@
           <a class="nav-link" href="#contact-us">Contact Us</a>
         </li>
          <li class="nav-item">
-          <button id="themeBtn"><i id="themeIcon" class="fa-solid fa-moon"></i></button>
+         <button class="themeBtn"><i class="fa-solid fa-moon themeIcon"></i></button>
         </li>
       </ul>
-  
     </div>
 <!-- Button trigger modal -->
  <div class="mobile-nav  d-block d-lg-none">
@@ -60,7 +59,8 @@
 <!-- Modal -->
  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
   <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasExampleLabel"> <img src="site-logo.png" alt="logo" class="img-fluid"></a></h5>
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel"> 
+      <img src="site-logo.png" alt="logo" class="img-fluid"></a></h5>
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
   </div>
   <div class="offcanvas-body">
@@ -86,7 +86,7 @@
           <a class="nav-link"  target="_blank"href="#contact-us">Contact Us</a>
         </li>
         <li class="nav-item">
-          <button id="themeBtn"><i id="themeIcon" class="fa-solid fa-moon"></i></button>
+         <button class="themeBtn"><i class="fa-solid fa-moon themeIcon"></i></button>
         </li>
       </ul>
   
@@ -562,27 +562,6 @@
 <!-- Waypoints JS (needed for progress animation) -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
 <script src="Script.js"></script>
-
-<script>
-function sendMessage() {
-    const name = document.getElementById("contact-name").value;
-    const phone = document.getElementById("contact-phone").value;
-    const email = document.getElementById("contact-email").value;
-    const subject = document.getElementById("contact-subject").value;
-    const message = document.getElementById("contact-message").value;
-    if (!name || !phone || !email || !message) {
-        alertify.error("⚠️ Please fill all required fields!");
-        return;
-    }
-    const fullMessage = `Name: ${name}\nPhone: ${phone}\nEmail: ${email}\nSubject: ${subject}\nMessage: ${message}`;
-    const phoneNumber = "918955990845";
-    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(fullMessage)}`;
-    window.open(url, "_blank");
-     alertify.success("✅ Your message is ready to send on WhatsApp!");
-    document.getElementById("contactForm").reset();
-}
-</script>
-
 </body>
 
 </html>
