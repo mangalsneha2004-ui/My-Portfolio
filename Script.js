@@ -1,4 +1,21 @@
+// dark-light theme toggle
+    const toggleBtn = document.getElementById("themeBtn");
+    const themeIcon = document.getElementById("themeIcon");
 
+    toggleBtn.addEventListener("click", () => {
+
+        document.body.classList.toggle("dark");
+
+        if (document.body.classList.contains("dark")) {
+            themeIcon.classList.remove("fa-moon");
+            themeIcon.classList.add("fa-sun");
+        } else {
+            themeIcon.classList.remove("fa-sun");
+            themeIcon.classList.add("fa-moon");
+        }
+    });
+
+// about us progressbar js 
     $(document).ready(function () {
       $('.barra-nivel').each(function () {
         var el = $(this);
@@ -16,7 +33,8 @@
         });
       });
     });
-
+    
+// slider js 
       $(document).ready(function () {
         $('.Projects .owl-carousel').owlCarousel({
             loop: true,
@@ -34,6 +52,8 @@
             }
         });
     });
+
+    // header animated text js 
     const phrases = [
   "Frontend Developer.",
   "Web Designer.",
@@ -70,6 +90,7 @@ function type() {
 
 type();
 
+// header fixed at the top on scroll 
   window.addEventListener("scroll", function () {
     const nav = document.querySelector("nav");
     if (window.scrollY > 100) {
@@ -78,4 +99,25 @@ type();
       nav.classList.remove("fixed");
     }
   });
+
+  // aos animation script 
   AOS.init();
+
+// contact us form js 
+function sendMessage() {
+    const name = document.getElementById("contact-name").value;
+    const phone = document.getElementById("contact-phone").value;
+    const email = document.getElementById("contact-email").value;
+    const subject = document.getElementById("contact-subject").value;
+    const message = document.getElementById("contact-message").value;
+    if (!name || !phone || !email || !message) {
+        alertify.error("⚠️ Please fill all required fields!");
+        return;
+    }
+    const fullMessage = `Name: ${name}\nPhone: ${phone}\nEmail: ${email}\nSubject: ${subject}\nMessage: ${message}`;
+    const phoneNumber = "918955990845";
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(fullMessage)}`;
+    window.open(url, "_blank");
+     alertify.success("✅ Your message is ready to send on WhatsApp!");
+    document.getElementById("contactForm").reset();
+}

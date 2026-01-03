@@ -188,7 +188,28 @@
 body.white-version .rn-service::before {
     background: var(--gradient-red-hover);
 }
-span.phone a:hover , span.mail a:hover{
+
+/* Light Theme (Default) */
+body.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Dark Theme */
+body.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Button */
+#themeBtn {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+span.phone a:hover , span.mail a:hover , footer a{
     color: var(--color-primary) !important;
 }
 body.white-version .contact-form-wrapper input.rn-btn:hover{
@@ -1115,7 +1136,91 @@ a[aria-disabled="true"] {
   cursor: pointer;
 
 }
+.owl-theme .owl-dots .owl-dot.active span {
+    width: 20px;
+    transition: var(--transition);
+}
+/* ============================
+   🌙 DARK MODE VARIABLES
+============================ */
+body.dark {
+    --color-body-white: #cfcfcf;
+    --color-heading-wv: #ffffff;
+    --color-primary: #ff014f;
+    --color-tertiary: #ffffff;
 
+    /* Backgrounds */
+    --gradient-box-w: linear-gradient(145deg, #1e2024, #23272b);
+    --background-color-1: linear-gradient(145deg, #1c1e22, #262a2e);
+    --background-color-2: #1b1e21;
+
+    /* Shadows for dark neumorphism */
+    --shadow-white-3: 5px 5px 15px #0b0d10, -5px -5px 15px #2d3035;
+    --shadow-1: 10px 10px 19px #0b0d10, -10px -10px 19px #2d3035;
+
+    /* Card Backgrounds */
+    --color-gray: #1a1d21;
+}
+
+/* Text & Background override */
+body.dark {
+    background-color: #121212 !important;
+    color: #ffffff !important;
+}
+body.dark .section-title h2.title,
+body.dark .nav-link,
+body.dark .slide .content .inner .title {
+    color: #fff !important;
+}
+body.dark .slide .content .inner .description {
+    color: #dcdcdc !important;
+}
+
+/* Cards */
+body.dark .Project-card {
+    background: var(--gradient-box-w) !important;
+    box-shadow: var(--shadow-white-3) !important;
+}
+
+/* Skills / Social Icons */
+body.dark .slide .skill-share li,
+body.dark .slide .social-share li a {
+    background: var(--background-color-1) !important;
+    box-shadow: var(--shadow-white-3) !important;
+}
+body.dark .slide .social-share li a svg {
+    color: var(--color-lightn) !important;
+}
+
+/* Navbar */
+body.dark nav.fixed {
+    background-color: #1e1f23 !important;
+    box-shadow: var(--shadow-white-3) !important;
+}
+#themeBtn {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background: var(--gradient-box-w);
+    box-shadow: var(--shadow-white-3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    transition: 0.3s ease;
+}
+
+body.dark #themeBtn {
+    background: var(--background-color-1);
+    box-shadow: var(--shadow-white-3);
+    color: #fff;
+}
+body.dark .offcanvas{
+ background-color: #121212 !important;
+ color: white!important;
+}
 
 
 
