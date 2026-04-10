@@ -60,8 +60,8 @@ themeButtons.forEach(btn => {
     const phrases = [
   "Frontend Developer.",
   "Web Designer.",
-  "Frontend Developer.",
-  "Web Designer."
+  "UI/UX Designer.",
+  "Freelancer."
 ];
 
 const typedText = document.querySelector(".typed-text");
