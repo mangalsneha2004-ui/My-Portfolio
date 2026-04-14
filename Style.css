@@ -445,7 +445,15 @@ body.white-version .section-title span.subtitle {
     font-size: 14px;
     margin-bottom: 2px;
 }
-
+.Projects .Project-card .project-links a{
+        color: black;
+    text-decoration: underline;
+    transition:5s;
+}
+    .Projects .Project-card .project-links a:hover{
+           color: var(--color-primary);
+    text-decoration: underline;
+}
 .Project-card .inner {
     position: relative;
 }
