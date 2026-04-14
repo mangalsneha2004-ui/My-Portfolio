@@ -448,12 +448,11 @@ body.white-version .section-title span.subtitle {
 .Projects .Project-card .project-links a{
     color: black;
     text-decoration: underline;
-    transition:5s;
+    transition:1.5s;
     font-weight: bold;
 }
     .Projects .Project-card .project-links a:hover{
            color: var(--color-primary)!important;
-    text-decoration: underline;
 }
 .Project-card .inner {
     position: relative;
