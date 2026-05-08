@@ -445,6 +445,9 @@ body.white-version .section-title span.subtitle {
     font-size: 14px;
     margin-bottom: 2px;
 }
+body.dark .Projects .Project-card .project-links a{
+    color: white;
+}
 .Projects .Project-card .project-links a{
     color: black;
     text-decoration: underline;
@@ -624,7 +627,7 @@ body.white-version .contact-about-area .description p {
     margin-bottom: 20px;
 }
 body.white-version .contact-about-area .description span {
-    color: var(--color-body-white);
+    color: var(--color-body-white);font-weight: 700;
 }
 
 .contact-about-area .description span {
@@ -645,23 +648,23 @@ body.white-version .contact-about-area .description span a {
 }
 .contact-about-area .social-area .social-icone {
     margin: -15px;
-    margin-top: 24px;
+    margin-top: 5px;
 }
 body.white-version .contact-about-area .social-area .social-icone a {
     background: var(--gradient-box-w);
     box-shadow: var(--shadow-white-3);
 }
 .contact-about-area .social-area .social-icone a {
-    width: 61px;
-    height: 61px;
-    line-height: 62px;
-    margin: 15px;
+    width: 40px;
+    height: 40px;
+    line-height: 44px;
+    margin: 10px;
     box-shadow: var(--shadow-1);
     border-radius: 6px;
     transition: var(--transition);
     display: inline-block;
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
     color: var(--color-body-white);
 }
 
@@ -807,6 +810,7 @@ body.white-version .copyright .description a:hover{
     align-items: center;
     font-size: 15px;
     line-height: 1.5;
+    margin-bottom: 7px;
 }
 .About-me ul li span {
     margin-left: 10px;
@@ -815,7 +819,7 @@ body.white-version .copyright .description a:hover{
     margin-bottom: 20px;
 }
 button.btn-download-cv {
-    margin: 10px 12px;
+    margin:25px 0 0 0;
     display: inline-block;
     border-radius: 6px;
     border: none;
@@ -910,7 +914,7 @@ body.white-version .rn-service {
 }
 .rn-service {
     text-align: left;
-    padding: 35px 50px 35px 50px;
+    padding: 0px 20px 45px 20px;
     transition: 0.5s all ease-in-out;
     position: relative;
     border-radius: 10px;
